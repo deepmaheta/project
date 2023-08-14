@@ -2,6 +2,6 @@
 $hostname="localhost";
 $username="root";
 $password="";
-$database="project";
+$database="deep";
 $conn=mysqli_connect($hostname,$username,$password,$database);
 ?>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 11, 2023 at 07:01 AM
+-- Generation Time: Aug 14, 2023 at 03:23 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `project`
+-- Database: `deep`
 --
 
 -- --------------------------------------------------------
@@ -88,6 +88,23 @@ INSERT INTO `product` (`ID`, `productname`, `productimage`, `productprice`, `pro
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `service`
+--
+
+CREATE TABLE `service` (
+  `ID` int(50) NOT NULL,
+  `firstnm` varchar(50) NOT NULL,
+  `lastnm` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `number` int(50) NOT NULL,
+  `address` varchar(150) NOT NULL,
+  `modelcar` varchar(100) NOT NULL,
+  `servicetype` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
@@ -128,6 +145,12 @@ ALTER TABLE `product`
   ADD PRIMARY KEY (`ID`);
 
 --
+-- Indexes for table `service`
+--
+ALTER TABLE `service`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -154,6 +177,12 @@ ALTER TABLE `category`
 --
 ALTER TABLE `product`
   MODIFY `ID` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `service`
+--
+ALTER TABLE `service`
+  MODIFY `ID` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `user`
