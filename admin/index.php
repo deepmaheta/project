@@ -19,7 +19,7 @@ if (!isset($_SESSION['email'])) {
         <div class="login-box">
             <div class="card card-outline card-primary">
                 <div class="card-header text-center">
-                    <a href="index2.html" class="h1"><b>Drive 4ward</b></a>
+                    <a href="index2.php" class="h1"><b>Drive 4ward</b></a>
                 </div>
                 <div class="card-body">
                     <form action="./login_process.php" method="post">
@@ -46,7 +46,7 @@ if (!isset($_SESSION['email'])) {
                         </div>
                     </form>
                     <p class="mb-1">
-                        <a href="forgot-password.html">I forgot my password</a>
+                        <a href="forgot-password.php">I forgot my password</a>
                     </p>
                 </div>
             </div>
