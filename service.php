@@ -84,74 +84,67 @@
         <!-- Section: Design Block -->
         <section class="text-center">
             <!-- Background image -->
-            <div class="p-5 bg-image" style="
-        background-image: url('img/loginformbgimage.png');
-        background-repeat:no-repeat;
-        height: 400px;
-        "></div>
+
             <!-- Background image -->
 
-            <div class="card mx-4 mx-md-5 shadow-5-strong" style="
-        margin-top: -100px;
-        background: hsla(0, 0%, 100%, 0.8);
-        backdrop-filter: blur(30px);
-        ">
-                <div class="card-body py-5 px-md-5">
+            <div class="card mx-4 mx-md-5 shadow-5-strong">
+                <div class="p-5 bg-image" style="background-image: url('img/bg.jpg'), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+            background-repeat:no-repeat;
+            height: auto; 
+            background-position:center;
+            background-blend-mode: overlay;
+            width: auto; ">
+                    <div class="card-body py-5 px-md-5">
 
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-lg-8">
-                            <h2 class="fw-bold mb-5">Book a Service now</h2>
-                            <form method="post" action="service_process.php">
-                                <!-- 2 column grid layout with text inputs for the first and last names -->
-                                <div class="row">
-                                    <div class="col-md-6 mb-4">
-                                        <div class="form-outline">
-                                            <input type="text" name="firstnm" id="form3Example1" class="form-control" />
-                                            <label class="form-label" for="form3Example1">First name</label>
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-lg-8">
+                                <h2 class="fw-bold mb-5" style="color: white;">Book Your Service Now</h2>
+                                <form method="post" action="service_process.php">
+                                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="text" name="firstnm" id="form3Example1" class="form-control" placeholder="First name" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="text" name="lastnm" id="form3Example2" class="form-control" placeholder="Last Name" />
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 mb-4">
-                                        <div class="form-outline">
-                                            <input type="text" name="lastnm" id="form3Example2" class="form-control" />
-                                            <label class="form-label" for="form3Example2">Last name</label>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="email" name="email" id="form3Example1" class="form-control" placeholder="Email"/>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-4">
+                                            <div class="form-outline">
+                                                <input type="text" name="number" id="form3Example2" class="form-control" required  placeholder="Contact Number"/>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 mb-4">
-                                        <div class="form-outline">
-                                            <input type="email" name="email" id="form3Example1" class="form-control" />
-                                            <label class="form-label" for="form3Example1">Email</label>
-                                        </div>
+                                    <div class="form-outline mb-4">
+                                        <textarea name="address" id="form3Example4" class="form-control" required placeholder="Address"></textarea>
                                     </div>
-                                    <div class="col-md-6 mb-4">
-                                        <div class="form-outline">
-                                            <input type="number" name="number" id="form3Example2" class="form-control" required />
-                                            <label class="form-label" for="form3Example2">Contact Number</label>
-                                        </div>
+                                    <div class="form-outline mb-4">
+                                        <input type="text" name="modelcar" id="form3Example3" class="form-control " required placeholder="Ex : Range Rover SVR" />
                                     </div>
-                                </div>
-                                <div class="form-outline mb-4">
-                                    <textarea name="address" id="form3Example4" class="form-control" required></textarea>
-                                    <label class="form-label" for="form3Example4">Address</label>
-                                </div>
-                                <div class="form-outline mb-4">
-                                    <input type="text" name="modelcar" id="form3Example3" class="form-control " required placeholder="Ex : BMW M2" />
-                                    <label class="form-label" for="form3Example3">Vehicle model</label>
-                                </div>
-                                <div class="form-outline mb-4">
-                                    <select name="servicetype" id="servicedropdown" required class="form-control">
-                                        <option value="" disabled selected>Select service type</option>
-                                        <option value="Full Service">Full Service</option>
-                                        <option value="Parts service">Parts service</option>
-                                        <option value="wiring service">wiring service</option>
-                                    </select>
-                                    <!-- <label class="form-label" for="servicedropdown">Service type</label> -->
-                                </div>
-                                <button type="submit" class="btn btn-primary btn-block mb-4">
-                                    Book Now
-                                </button>
-                            </form>
+                                    <div class="form-outline mb-4">
+                                        <select name="servicetype" id="servicedropdown" required class="form-control">
+                                            <option value="" disabled selected>Select service type</option>
+                                            <option value="Full Service">Full Service</option>
+                                            <option value="Parts service">Parts service</option>
+                                            <option value="wiring service">wiring service</option>
+                                        </select>
+                                        <!-- <label class="form-label" for="servicedropdown">Service type</label> -->
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-block mb-4">
+                                        Book Now
+                                    </button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -161,60 +154,12 @@
         <!-- Section: Design Block -->
     </section>
 
-    <!-- Banner Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="bg-banner py-5 px-4 text-center">
-                <div class="py-5">
-                    <h1 class="display-1 text-uppercase text-primary mb-4">50% OFF</h1>
-                    <h1 class="text-uppercase text-light mb-4">Special Offer For New Members</h1>
-                    <p class="mb-4">Only for Sunday from 1st Jan to 30th Jan 2045</p>
-                    <a class="btn btn-primary mt-2 py-3 px-5" href="">Register Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Banner End -->
-
-
-    <!-- Vendor Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="owl-carousel vendor-carousel">
-                <div class="bg-light p-4">
-                    <img src="img/vendor-1.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-2.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-3.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-4.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-5.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-6.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-7.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-8.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Vendor End -->
 
 
     <!-- Footer Start -->
     <?php
     include("./common/footer.php");
-   ?>
+    ?>
     <!-- Footer End -->
 
 

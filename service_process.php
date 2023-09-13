@@ -2,7 +2,10 @@
 print_r($_POST);
 extract($_POST);
 include("admin/include/config.php");
-$qry="INSERT INTO service (firstnm,lastnm,email,number,address,modelcar,servicetype) VALUES ('".$firstnm."','".$lastnm."','".$email."',$number,'".$address."','".$modelcar."','".$servicetype."')";
+$qry="INSERT INTO service (firstnm,lastnm,email,number,address,modelcar,servicetype) VALUES ('".$firstnm."','".$lastnm."',
+'".$email."','".$number."','".$address."','".$modelcar."','".$servicetype."')";
+echo $qry;
+// EXIT();
 $res=mysqli_query($conn,$qry);
 if($res){
     ?>

@@ -46,7 +46,7 @@
                     <a href="index.php" class="nav-item nav-link <?php echo basename($_SERVER['SCRIPT_NAME']) == "index.php" ? "active" : ""; ?>">Home</a>
                     <a href="about.php" class="nav-item nav-link <?php echo basename($_SERVER['SCRIPT_NAME']) == "about.php" ? "active" : ""; ?>">About</a>
                     <a href="service.php" class="nav-item nav-link <?php echo basename($_SERVER['SCRIPT_NAME']) == "service.php" ? "active" : ""; ?>">Service</a>
-                    <a href="detail.php" class="nav-item nav-link <?php echo basename($_SERVER['SCRIPT_NAME']) == "detail.php" ? "active" : ""; ?>">Car detail</a>
+                    <!-- <a href="detail.php" class="nav-item nav-link <?php echo basename($_SERVER['SCRIPT_NAME']) == "detail.php" ? "active" : ""; ?>">Car detail</a> -->
                     <div class="nav-item dropdown">
                         <a href="team.php" class="nav-link <?php echo basename($_SERVER['SCRIPT_NAME']) == "team.php" ? "active" : ""; ?>">team</a>
                     </div>
