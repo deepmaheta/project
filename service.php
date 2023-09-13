@@ -85,8 +85,9 @@
         <section class="text-center">
             <!-- Background image -->
             <div class="p-5 bg-image" style="
-        background-image: url('https://mdbootstrap.com/img/new/textures/full/171.jpg');
-        height: 300px;
+        background-image: url('img/loginformbgimage.png');
+        background-repeat:no-repeat;
+        height: 400px;
         "></div>
             <!-- Background image -->
 
@@ -135,7 +136,7 @@
                                     <label class="form-label" for="form3Example4">Address</label>
                                 </div>
                                 <div class="form-outline mb-4">
-                                    <input type="text" name="modelcar" id="form3Example3" class="form-control " required />
+                                    <input type="text" name="modelcar" id="form3Example3" class="form-control " required placeholder="Ex : BMW M2" />
                                     <label class="form-label" for="form3Example3">Vehicle model</label>
                                 </div>
                                 <div class="form-outline mb-4">
