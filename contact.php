@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ROYAL CARS - Car Rental HTML Template</title>
+    <title>DRIVE4WARD</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -43,20 +43,20 @@
             <div class="row">
                 <div class="col-lg-7 mb-2">
                     <div class="contact-form bg-light mb-4" style="padding: 30px;">
-                        <form>
+                        <form action="contact_add.php" method="post">
                             <div class="row">
                                 <div class="col-6 form-group">
-                                    <input type="text" class="form-control p-4" placeholder="Your Name" required="required">
+                                    <input type="text" name="name" class="form-control p-4" placeholder="Your Name" required="required">
                                 </div>
                                 <div class="col-6 form-group">
-                                    <input type="email" class="form-control p-4" placeholder="Your Email" required="required">
+                                    <input type="email" name="email" class="form-control p-4" placeholder="Your Email" required="required">
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control p-4" placeholder="Subject" required="required">
+                                <input type="text" name="subject" class="form-control p-4" placeholder="Subject" required="required">
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control py-3 px-4" rows="5" placeholder="Message" required="required"></textarea>
+                                <textarea class="form-control py-3 px-4" name="message" rows="5" placeholder="Message" required="required"></textarea>
                             </div>
                             <div>
                                 <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
@@ -64,38 +64,31 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-5 mb-2">
-                    <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4" style="height: 435px;">
-                        <div class="d-flex mb-3">
-                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Head Office</h5>
-                                <p>123 Street, New York, USA</p>
+                <div class="col-lg-5 mb-1">
+                        <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4" style="height: 420px;">
+                            <div class="d-flex mb-3">
+                                <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
+                                <div class="mt-n1">
+                                    <h5 class="text-light">Head Office</h5>
+                                    <p>Mavdi main road, rajkot</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Branch Office</h5>
-                                <p>123 Street, New York, USA</p>
+                            <div class="d-flex mb-3">
+                                <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
+                                <div class="mt-n1">
+                                    <h5 class="text-light">Branch Office</h5>
+                                    <p>krishna park , rajkot</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-flex mb-3">
-                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Customer Service</h5>
-                                <p>customer@example.com</p>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
-                            <div class="mt-n1">
-                                <h5 class="text-light">Return & Refund</h5>
-                                <p class="m-0">refund@example.com</p>
+                            <div class="d-flex mb-3">
+                                <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
+                                <div class="mt-n1">
+                                    <h5 class="text-light">Customer Service</h5>
+                                    <p>info@drive4ward.com</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
         </div>
     </div>
@@ -104,36 +97,26 @@
 
     <!-- Vendor Start -->
     <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="owl-carousel vendor-carousel">
-                <div class="bg-light p-4">
-                    <img src="img/vendor-1.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-2.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-3.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-4.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-5.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-6.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-7.png" alt="">
-                </div>
-                <div class="bg-light p-4">
-                    <img src="img/vendor-8.png" alt="">
+            <div class="container py-5">
+                <div class="owl-carousel vendor-carousel">
+                    <?php
+                    include_once('admin/include/config.php');
+                    $qry = "SELECT * FROM category";
+                    $res = mysqli_query($conn, $qry);
+                    $row = mysqli_fetch_row($res);
+
+                    while ($row = mysqli_fetch_assoc($res)) {
+                    ?>
+                        <div class="bg-light p-4">
+                            <a href=""><img src="<?php echo 'images/category/' . $row['categoryimage']; ?>" alt="image"></a>
+                        </div>
+                    <?php
+                    }
+                    ?>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Vendor End -->
+        <!-- Vendor End -->
 
 
     <!-- Footer Start -->

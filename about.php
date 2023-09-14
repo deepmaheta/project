@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>ROYAL CARS - Car Rental HTML Template</title>
+    <title>DRIVE4WARD</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -39,11 +39,11 @@
     <!-- About Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
-            <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span class="text-primary">Royal Cars</span></h1>
+            <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span class="text-primary">drive4ward</span></h1>
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
                     <img class="w-75 mb-4" src="img/about.png" alt="">
-                    <p>Justo et eos et ut takimata sed sadipscing dolore lorem, et elitr labore labore voluptua no rebum sed, stet voluptua amet sed elitr ea dolor dolores no clita. Dolores diam magna clita ea eos amet, amet rebum voluptua vero vero sed clita accusam takimata. Nonumy labore ipsum sea voluptua sea eos sit justo, no ipsum sanctus sanctus no et no ipsum amet, tempor labore est labore no. Eos diam eirmod lorem ut eirmod, ipsum diam sadipscing stet dolores elitr elitr eirmod dolore. Magna elitr accusam takimata labore, et at erat eirmod consetetur tempor eirmod invidunt est, ipsum nonumy at et.</p>
+                    <p>DRIVE4WARD is your best friend when it comes to any car services! With efficient pricing, highly skilled experts, the latest equipment and technology and genuine parts, we bring you a range of services designed to keep your car in the best shape.</p>
                 </div>
             </div>
             <div class="row mt-3">

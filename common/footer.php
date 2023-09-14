@@ -25,17 +25,16 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 mb-5">
-                <h4 class="text-uppercase text-light mb-4">Newsletter</h4>
-                <p class="mb-4">Volup amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sed kasd et</p>
+                <h4 class="text-uppercase text-light mb-4">Login</h4>
+                <p class="mb-4">For Book Your Service Please Login First!</p>
                 <div class="w-100 mb-3">
                     <div class="input-group">
-                        <input type="text" class="form-control bg-dark border-dark" style="padding: 25px;" placeholder="Your Email">
+                        <input type="text" class="form-control bg-dark border-dark" style="padding: 25px;" placeholder="Enter Your Email">
                         <div class="input-group-append">
-                            <button class="btn btn-primary text-uppercase px-3">Sign Up</button>
+                            <button class="btn btn-primary text-uppercase px-3">Login</button>
                         </div>
                     </div>
                 </div>
-                <i>Lorem sit sed elitr sed kasd et</i>
             </div>
         </div>
     </div>

@@ -21,7 +21,7 @@
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" data-accordion="false" role="menu">
                 <li class="nav-item">
-                    <a href="dashboard.php" class="nav-link <?php echo ($_SERVER['SCRIPT_NAME']=='/project/admin/dashboard.php'?"active":'') ?>">
+                    <a href="dashboard.php" class="nav-link <?php echo ($_SERVER['SCRIPT_NAME'] == '/project/admin/dashboard.php' ? "active" : '') ?>">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
@@ -35,49 +35,42 @@
                 $count = mysqli_num_rows($res);
                 ?>
                 <li class="nav-item">
-                <a href="category.php" class="nav-link <?php echo ($_SERVER['SCRIPT_NAME']=='/project/admin/category.php'?"active":'') ?>">
+                    <a href="category.php" class="nav-link <?php echo ($_SERVER['SCRIPT_NAME'] == '/project/admin/category.php' ? "active" : '') ?>">
                         <i class="nav-icon far fa-list-alt"></i>
                         <p>
                             Category
                             <span class="badge badge-info right"><?php echo $count; ?></span>
                         </p>
                     </a>
-                    <?php
+
+                </li>
+                <?php
                 include_once('include/config.php');
-                $catqry = "SELECT ID FROM product";
+                $catqry = "SELECT ID FROM contact";
                 $catres = mysqli_query($conn, $catqry);
                 $catcount = mysqli_num_rows($catres);
                 ?>
-                </li>
                 <li class="nav-item">
-                <a href="product.php" class="nav-link <?php echo ($_SERVER['SCRIPT_NAME']=='/project/admin/product.php'?"active":'') ?>">
-                        <i class="nav-icon far fa-calendar-alt"></i>
+                    <a href="contacts.php" class="nav-link <?php echo ($_SERVER['SCRIPT_NAME'] == '/project/admin/contacts.php' ? "active" : '') ?>">
+                        <i class="nav-icon fa fa-user-alt"></i>
                         <p>
-                            Product
+                            contact
                             <span class="badge badge-info right"><?php echo $catcount; ?></span>
                         </p>
                     </a>
                 </li>
                 <?php
                 include_once('include/config.php');
-                $catqry = "SELECT ID FROM user";
+                $catqry = "SELECT ID FROM service";
                 $catres = mysqli_query($conn, $catqry);
                 $catcount = mysqli_num_rows($catres);
                 ?>
                 <li class="nav-item">
-                <a href="user.php" class="nav-link <?php echo ($_SERVER['SCRIPT_NAME']=='/project/admin/user.php'?"active":'') ?>">
+                    <a href="service.php" class="nav-link <?php echo ($_SERVER['SCRIPT_NAME'] == '/project/admin/service.php' ? "active" : '') ?>">
                         <i class="nav-icon fa fa-user-alt"></i>
                         <p>
-                            Users
+                            service
                             <span class="badge badge-info right"><?php echo $catcount; ?></span>
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="contact.php" class="nav-link <?php echo ($_SERVER['SCRIPT_NAME']=='/project/admin/contact.php'?"active":'') ?>">
-                        <i class="nav-icon fas fa-phone-alt"></i>
-                        <p>
-                            Contact Us
                         </p>
                     </a>
                 </li>

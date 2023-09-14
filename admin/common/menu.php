@@ -7,7 +7,7 @@
             <a href="dashboard.php" class="nav-link">Home</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="./contact.php" class="nav-link">Contact</a>
+            <a href="./contacts.php" class="nav-link">Contact</a>
         </li>
     </ul>
     <ul class="navbar-nav ml-auto">
