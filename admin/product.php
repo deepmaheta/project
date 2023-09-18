@@ -10,7 +10,7 @@ if (!isset($_SESSION['email'])) {
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Mobile Planet | Producut</title>
+        <title>Drive4ward | Producut</title>
         <?php
         include('./common/style.php')
         ?>

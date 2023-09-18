@@ -129,7 +129,7 @@ session_start();
                                         <div class="col-md-6 mb-4">
                                             <div class="form-outline">
 
-                                                <input type="date"  name="date" id="form3Example2" class="form-control" required placeholder="Contact Number" />
+                                                <input type="date" name="date" id="form3Example2" class="form-control" required placeholder="Contact Number" />
                                             </div>
                                         </div>
                                         <div class="col-md-6 mb-4">
