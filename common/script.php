@@ -1,4 +1,5 @@
 <script src="lib/easing/easing.min.js"></script>
+<script src="../js/fontawesome.js"></script>
 <script src="lib/waypoints/waypoints.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="lib/tempusdominus/js/moment.min.js"></script>

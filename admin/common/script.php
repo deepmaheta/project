@@ -33,4 +33,4 @@ $.widget.bridge("uibutton", $.ui.button);
 <script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
 <script src="dist/js/adminlte.min.js"></script>
 <script src="dist/js/demo.js"></script>
-
+<script src="fontawesome.js"></script>
