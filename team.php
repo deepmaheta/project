@@ -39,7 +39,7 @@
         <div class="container py-5">
             <!-- <h1 class="display-1 text-primary text-center">03</h1> -->
             <h1 class="display-4 text-uppercase text-center mb-5">Meet Our Team</h1>
-            <div class="owl-carousel team-carousel position-relative" style="padding: 0 30px;">
+            <div  class=" team-carousel position-relative" style="padding: 0 30px; display: flex;">
                 <div class="team-item">
                     <img class="img-fluid w-100" src="img/team 1.jpg" style="height: 270px; width:270px; object-fit: contain; " alt="">
                     <div class="position-relative py-4">
@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <div class="team-item">
-                    <img class="img-fluid w-100" src="./img/team 3.jpg" alt="">
+                    <img class="img-fluid w-100" src="./img/team 3.jpg"style="height: 270px; width:270px; object-fit: contain; " alt="">
                     <div class="position-relative py-4">
                         <h4 class="text-uppercase">Milan Bharadva</h4>
                         <p class="m-0">Partner</p>
@@ -77,7 +77,7 @@
                     </div>
                 </div>
                 <div class="team-item">
-                    <img class="img-fluid w-100" src="img/team 4.jpg" alt="">
+                    <img class="img-fluid w-100" src="img/team 4.jpg" style="height: 270px; width:270px; object-fit: contain; " alt="">
                     <div class="position-relative py-4">
                         <h4 class="text-uppercase">Naman Vadhiya</h4>
                         <p class="m-0">Partner</p>
